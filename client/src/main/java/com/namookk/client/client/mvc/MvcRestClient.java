@@ -4,6 +4,7 @@ import com.namookk.client.client.mvc.dto.CreateItemDto;
 import com.namookk.client.client.mvc.dto.ItemDto;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -42,4 +43,7 @@ public interface MvcRestClient {
 
   @GetExchange("/4xx")
   ResponseEntity<Void> get4xxError();
+
+  @PostExchange("/auth/token")
+  ResponseEntity<UUID> getToken();
 }
