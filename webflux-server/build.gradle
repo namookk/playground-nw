@@ -1,0 +1,11 @@
+bootJar {
+    enabled = true
+    archivesBaseName = 'webflux-server'
+    archiveFileName = 'webflux-server.jar'
+    archiveVersion = "0.0.1"
+}
+jar { enabled = false }
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+}

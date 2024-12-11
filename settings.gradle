@@ -1,0 +1,5 @@
+rootProject.name = 'playground'
+
+include 'client'
+include 'mvc-server'
+include 'webflux-server'
